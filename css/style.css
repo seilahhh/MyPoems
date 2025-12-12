@@ -1,21 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f0e1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #f0f0f0;
+  overflow: hidden;
 }
 
-#book {
-  width: 400px;
+#book-wrapper {
+  width: 1000px;
   height: 600px;
 }
 
-.page {
+#book {
+  width: 100%;
+  height: 100%;
+}
+
+#book .hard {
+    background: linear-gradient(145deg, #801c11, #a32c1b) !important;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#book .hard small {
+    font-style: italic;
+    font-weight: lighter;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+#book .page {
   background: white;
-  border: 1px solid #ccc;
-  padding: 20px;
-  font-family: 'Georgia', serif;
-  font-size: 18px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#book .page h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#book .page p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
 }
