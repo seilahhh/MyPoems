@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+#book {
+  width: 400px;
+  height: 600px;
+}
+
+.page {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  text-align: center;
+}
