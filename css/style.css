@@ -19,8 +19,8 @@ body {
 
 #book-wrapper {
     width: 90vw;
-    max-width: 1100px;
-    aspect-ratio: 1100/750;
+    max-width: 1000px;
+    aspect-ratio: 1000/600;
     transition: transform 0.4s ease-out;
 }
 
@@ -33,6 +33,26 @@ body {
 #book .page,
 #book .hard {
     pointer-events: all;
+}
+
+#book .hard small {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+#book .page {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
 #book .hard {
@@ -49,34 +69,15 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-#book .hard small {
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-    font-size: 16px;
-    font-weight: normal;
-    opacity: 0.8;
-}
-
-#book .page {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 #book .page h2 {
     font-size: 28px;
-    margin-bottom: 10px;
+    margin: 10px;
     font-weight: 600;
 }
 
 #book .page p {
-    font-size: clamp(12px, 50%, 16);
-    line-height: 1.4;
+    font-size: 17px;
+    line-height: 1.6;
     text-align: center;
 }
 
@@ -117,14 +118,12 @@ body {
         width: 90vw;
         max-width: 400px;
         height: 80vh;
-
         aspect-ratio: auto;
     }
 
-    #book,
-    #book .page,
-    #book .hard {
-        pointer-events: none;
+    #book {
+        width: 100%;
+        height: auto;
     }
 
     .nav-btn {
