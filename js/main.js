@@ -15,6 +15,7 @@ $(document).ready(function () {
             height: $book.parent().height(),
             autoCenter: true,
             display: isMobile ? "single" : "double",
+            duration: 0,
         });
     };
 
@@ -36,10 +37,12 @@ $(document).ready(function () {
 
     // Block touch interactions on mobile
     $book.on("start", function (event, pageObject, corner) {
-        if (!isMobile) return;
-
         const blockedCorners = ["tl", "tr", "bl", "br", "r", "l"];
         if (blockedCorners.includes(corner)) event.preventDefault();
+    });
+
+    $book.on("turned", function (event, pageObject, corner) {
+        updateNavigationButtons();
     });
 
     // Show/hide navigation buttons
@@ -63,8 +66,6 @@ $(document).ready(function () {
         } else {
             $book.turn("next");
         }
-
-        updateNavigationButtons();
     };
 
     // Navigate to the previous page
@@ -77,8 +78,6 @@ $(document).ready(function () {
         } else {
             $book.turn("previous");
         }
-
-        updateNavigationButtons();
     };
 
     nextButton.on("click", goNext);
