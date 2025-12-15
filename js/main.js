@@ -1,6 +1,6 @@
 $(document).ready(function () {
     const $book = $("#book");
-    const nextButton =  $("#next-page");
+    const nextButton = $("#next-page");
     const previousButton = $("#prev-page");
 
     // Check if the viewport is mobile
@@ -42,6 +42,17 @@ $(document).ready(function () {
         if (blockedCorners.includes(corner)) event.preventDefault();
     });
 
+    // Show/hide navigation buttons
+    function updateNavigationButtons() {
+        const currentPage = $book.turn("page");
+        const totalPages = $book.turn("pages");
+
+        previousButton.toggle(currentPage > 1);
+        nextButton.toggle(currentPage < totalPages);
+    }
+
+    updateNavigationButtons();
+
     // Navigate to the next page
     const goNext = () => {
         const currentPage = $book.turn("page");
@@ -52,6 +63,8 @@ $(document).ready(function () {
         } else {
             $book.turn("next");
         }
+
+        updateNavigationButtons();
     };
 
     // Navigate to the previous page
@@ -64,6 +77,8 @@ $(document).ready(function () {
         } else {
             $book.turn("previous");
         }
+
+        updateNavigationButtons();
     };
 
     nextButton.on("click", goNext);
