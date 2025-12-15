@@ -132,8 +132,8 @@ body {
 
     .nav-btn {
         position: fixed;
-        bottom: 10px;
-        top: auto;
+        bottom: auto;
+        top: 10px;
         transform: none;
         width: 45%;
         font-size: 1.2rem;
