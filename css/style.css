@@ -126,6 +126,10 @@ body {
         height: auto;
     }
 
+    #book .page p {
+        font-size: 12px;
+    }
+
     .nav-btn {
         position: fixed;
         bottom: 10px;
