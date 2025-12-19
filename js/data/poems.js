@@ -73,6 +73,21 @@ const poems = [
             `,
     },
     {
+        title: "Criança",
+        text: `
+            Até ontem, eras pouco mais do que uma criança enfadonha
+            Ideias loucas sem pensar
+            Mas eis a questão, onde é que elas estão?
+
+            O tempo corre, ele desaparece
+            Ele já não volta e é o que acontece
+            Soldado e escritor que tanto querias ser
+            Bombeiro ou polícia para alguém te ver
+            Mas tudo caiu e não quiseste querer
+            Hoje já mais velho não sabes o que fazer
+            `,
+    },
+    {
         title: "Cores",
         text: `
             O amarelo do sol, o amarelo do sorriso
@@ -104,6 +119,44 @@ const poems = [
             Flor a desabrochar, estamos tão perto
             E assim, nas cores eu faço sentir
             Viver é misturar, pintar e descobrir
+            `,
+    },
+    {
+        title: "Escolhas",
+        text: `
+            O certo e o errado dançam na sombra
+            Confundem-se como os rios que chegam a se cruzar
+            O mundo observa, ele assombra
+            Enquanto seguimos sem saber onde chegar
+
+            Não há caminhos limpos no ser humano,
+            Nem decisões sem consequência
+            Todas as escolhas, trazem um eco
+            Que ressoa na consciência
+
+            Um brilho intenso mostra-se ao fundo
+            Uma nova porta que apareceu no mundo
+            Será como dizem? Deverei abrir?
+            Ou devo bater com ela e fugir?
+            `,
+    },
+    {
+        title: "Vento",
+        text: `
+            O vento é como um viajante sem morada
+            Percorre o mundo todo sem se agarrar a nada
+            É livre, conhece caminhos e distâncias,
+            Mas carrega também o silêncio das errâncias
+
+            Memórias que dormem em ruas vazias
+            Passa por nós como uma sombra leve
+            Deixa apenas o rasto de quem não existe,
+            Mas ele insiste
+
+            Conhece nomes esquecidos pelo tempo
+            Mas não os tem a quem contar
+            Talvez seja só um vadio à procura
+            À procura de alguém com quem falar
             `,
     },
 ];
