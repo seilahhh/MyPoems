@@ -17,13 +17,12 @@ export function setupBook($book, poems) {
       <article class="page fixed book-index">
         <h2>Índice</h2>
         <ul></ul>
-        <div class="page-number">3</div>
       </article>
     `);
 
         poems.forEach((poem, i) => {
             const $li = $(
-                `<li><a href="#">${poem.title}</a><span class="page-number">${
+                `<li><a href="#">${poem.title}</a><span class="page-number-index">${
                     i + 4
                 }</span></li>`
             );
