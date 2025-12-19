@@ -52,6 +52,20 @@ const poems = [
             `,
     },
     {
+        title: "Onde estás?",
+        text: `
+            Acho que nunca quis escrever
+            Este poema, porque me dói
+            E sem uma despedida
+            A tua falta me corrói
+
+            Eu voltaria no tempo
+            Se pudesse te ver mais
+            Um abraço em cada momento
+            Espera pela gente, eu sei que vais
+            `,
+    },
+    {
         title: "Destino",
         text: `
             A faca do destino
