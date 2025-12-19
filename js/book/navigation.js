@@ -54,5 +54,14 @@ export function setupNavigation($book, nextBtn, prevBtn, state) {
     prevBtn.on("click", prev);
     $book.on("turned", updateButtons);
 
+    $book.on("turning", (event, page) => {
+        if (page === 3 || page === 2) {
+            $(".book-index").show();
+        } else {
+            $(".book-index").hide();
+        }
+        updateButtons();
+    });
+
     updateButtons();
 }
