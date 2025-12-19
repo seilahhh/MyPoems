@@ -7,7 +7,7 @@ import { setupBook } from "./book/pages.js";
 $(document).ready(function () {
     const $book = $("#book");
 
-    setupBook($book, poems)
+    setupBook($book, poems);
 
     const state = {
         isMobile: isMobileView(),
@@ -18,4 +18,6 @@ $(document).ready(function () {
     setupNavigation($book, $("#next-page"), $("#prev-page"), state);
 
     $(window).on("resize orientationchange", () => handleResize($book, state));
+
+    $book.css("visibility", "visible");
 });
