@@ -20,7 +20,7 @@ const poems = [
             `,
     },
     {
-        title: "Pobre lenhador...",
+        title: "Pobre lenhador",
         text: `
             Acordei cedo, estava um escuro medonho
             Abri a janela de um jeito brusco

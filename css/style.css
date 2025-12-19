@@ -113,6 +113,31 @@ body {
     right: 10px;
 }
 
+.book-index ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 80px;
+}
+
+.book-index ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+}
+
+.book-index ul li a {
+    text-decoration: none;
+    color: #801c11;
+}
+
+.book-index ul li .page-number {
+    font-weight: bold;
+    color: #555;
+    margin-left: 10px;
+}
+
 @media (max-width: 767px) {
     #book-wrapper {
         width: 90vw;
