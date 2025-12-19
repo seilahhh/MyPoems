@@ -119,6 +119,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px 80px;
+    margin: 10px;
 }
 
 .book-index ul li {
